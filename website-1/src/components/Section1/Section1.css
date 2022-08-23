@@ -1,0 +1,41 @@
+
+.section1-text{
+    color: white;
+    width: 50vw;
+    padding-left: 20vw;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+    font-family: 'Inter Display',sans-serif;
+    font-size: 3.5em;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    max-width: 24em;
+}
+.text-sec{
+   padding-right: 50vh;
+}
+.navbar-sec{
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 8vh 12vw 0;
+    z-index: 1;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+}
+.nav-left{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.nav-right{
+    text-align: right;
+}
+.nav-right-button{
+    background-color: #0052cc;;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8vh 1vw;
+}
