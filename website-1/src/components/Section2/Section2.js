@@ -10,7 +10,7 @@ import person5 from "../../assets/workskill-proj-1-img-6.jpeg";
 function Section2() {
   return (
     <div>
-      <div className="section">
+      <div className="section grid-pattern">
         <div className="text-sec2">Build by a small but mighty crew.</div>
         <div className="person-sec">
           <div className="grid-person">
