@@ -6,7 +6,6 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  mix-blend-mode: multiply;
   background-color: #0e1117;
   color: white;
   z-index: -1;
