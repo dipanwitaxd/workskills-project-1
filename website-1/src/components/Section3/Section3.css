@@ -9,6 +9,7 @@
   mix-blend-mode: multiply;
   background-color: #0e1117;
   color: white;
+  z-index: -1;
 }
 .background-section3-head{
     text-align: center;
