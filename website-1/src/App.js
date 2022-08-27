@@ -7,6 +7,7 @@ import Section3 from './components/Section3/Section3';
 import Section5 from './components/Section5/Section5';
 import Section6 from './components/Section6/Section6';
 import Section6second from './components/Section6/Section6second';
+import Section7 from './components/Section7/Section7';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Section5 />
       <Section6 />
       <Section6second />
+      <Section7 />
     </div>
   );
 }
