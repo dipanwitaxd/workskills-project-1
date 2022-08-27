@@ -13,7 +13,7 @@ function Section5() {
         </div>
       </div>
       <div className="sec-row2">
-        <div className="sec-row-col">
+        <div className="sec-row-col" data-aos="fade-up">
           <div className="sec-row-col-title">01.</div>
           <div className="sec-mid">
             <div className="sec-mid-round sec-place">
@@ -36,7 +36,7 @@ function Section5() {
             </div>
           </div>
         </div>
-        <div className="sec-row-col">
+        <div className="sec-row-col" data-aos="fade-up">
           <div className="sec-row-col-title">02.</div>
           <div className="sec-mid">
             <div className="sec-mid-round sec-place">
@@ -57,7 +57,7 @@ function Section5() {
             </div>
           </div>
         </div>
-        <div className="sec-row-col">
+        <div className="sec-row-col" data-aos="fade-up">
           <div className="sec-row-col-title">03.</div>
           <div className="sec-mid">
             <div className="sec-mid-round sec-place">
