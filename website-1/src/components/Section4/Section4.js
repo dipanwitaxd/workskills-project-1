@@ -34,7 +34,7 @@ function Section4() {
             data-aos="fade-up"
             
           ></div>
-          <div className="line" data-aos="flip-up" >
+          <div className="line"  >
             <div className="lines">Add and edit schema markup</div>
             <DoneRounded
               style={{ color: "rgb(167,181,196)", fontSize: ".875em" }}
