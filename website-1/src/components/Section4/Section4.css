@@ -78,10 +78,6 @@
 .row2-sec4{
     display: grid;
     grid-template-rows: repeat(8, 1fr);
-    background-image: url('../../assets/workskill-proj-1-background-img-2.png');
-    height: fit-content;
-    background: cover;
-    z-index: 1;
 }
 .line{
     display: grid;
