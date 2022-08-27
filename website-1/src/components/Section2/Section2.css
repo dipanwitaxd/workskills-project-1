@@ -30,7 +30,7 @@
     /* transform: translateX(10);
   transition: transform ease;
   animation: myanimation ; */
-  
+  z-index: -1;
 }
 /* @keyframes myanimation {
     0% {
