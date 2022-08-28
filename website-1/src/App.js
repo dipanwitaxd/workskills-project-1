@@ -9,6 +9,7 @@ import Section6 from './components/Section6/Section6';
 import Section6second from './components/Section6/Section6second';
 import Section7 from './components/Section7/Section7';
 import Section8 from './components/Section8/Section8';
+import Section9 from './components/Section9/Section9';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Section6second />
       <Section7 />
       <Section8 />
+      <Section9 />
     </div>
   );
 }
