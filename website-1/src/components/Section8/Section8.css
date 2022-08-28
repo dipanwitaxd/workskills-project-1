@@ -1,0 +1,172 @@
+.section8-background{
+    background-image: url("../../assets/workskill-proj-1-background-img-3.png");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-color: #0e1117;
+    color: #ccdae7;
+    z-index: -1;
+
+    position: relative;
+    margin-bottom: -4em;
+    padding-bottom: 4em;
+}
+.overflow{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    margin-right: -40em;
+    margin-left: -40em;
+    /* padding-top: 10em; */
+    padding-right: 40em;
+    padding-left: 40em;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.section8{
+    width: auto;
+    margin-right: -40em;
+    margin-left: -40em;
+    /* padding-top: 10em; */
+    padding-right: 40em;
+    padding-left: 40em;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.header-text{
+    grid-column-start: span 4;
+    grid-column-end: span 4;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+
+    /* margin: 1em; */
+
+    font-size: 3em;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -.04em
+}
+.header-sub{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+.images{
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+.sub-text{
+    position: relative;
+    padding: 1em;
+}
+.sub-text-head{
+    margin-bottom: 0.75em;
+}
+.sub-head{
+    margin: 0.25em;
+    position: relative;
+    letter-spacing: -.025em;
+    font-size: 0.9em;
+    line-height: 1.2;
+    font-weight: 600;
+    color: white;
+}
+.text-s{
+    position: relative;
+    font-size: .8em;
+    line-height: 1.25;
+    letter-spacing: -.005em;
+}
+.link{
+    font-size: 16px;
+    line-height: 1.333;
+    font-weight: 400;
+    display: grid;
+    -webkit-box-pack: start;
+    justify-content: start;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    grid-column-gap: 0.25em;
+    grid-row-gap: 0.25em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.link-text{
+    position: relative;
+    font-size: .875em;
+    line-height: 1;
+    letter-spacing: -.005em;
+}
+.sec-8{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    margin-right: -40em;
+    margin-left: -40em;
+    padding-top: 10em;
+    padding-right: 40em;
+    padding-left: 40em;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+    background-color: #171e25;
+}
+.sec8-top{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 64em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+}
+.section-head{
+    position: relative;
+    padding: 4em;
+}
+.sec8-head{
+    width: 100%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+.section-top{
+    grid-column-start: span 4;
+    grid-column-end: span 4;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+}
+.how-it-works{
+    padding-bottom: 5vh;
+    width: 100%;
+}
+.how-it-works-pattern{
+    position: relative;
+    z-index: 2;
+    display: grid;
+    -webkit-box-pack: start;
+    justify-content: start;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+}
