@@ -12,7 +12,7 @@
 
     position: relative;
     margin-bottom: -4em;
-    padding-bottom: 4em;
+    padding-bottom: 30vh;
 }
 .overflow{
     position: relative;
@@ -119,6 +119,8 @@
     border-top-right-radius: 50%;
 
     background-color: #171e25;
+    padding-bottom: 30vh;
+
 }
 .sec8-top{
     position: relative;
