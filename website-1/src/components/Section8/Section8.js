@@ -17,7 +17,7 @@ function Section8() {
             <div className="sec8-top">
               <div className="section-grid">
                 <div className="sec8-head">
-                  <div className=" section-top">
+                  <div className="section-top">
                     <div className="how-it-works">
                       <div className="how-it-works-pattern">
                         <div className="fingerprint">

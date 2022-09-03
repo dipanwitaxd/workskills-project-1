@@ -13,7 +13,7 @@ import Section9 from './components/Section9/Section9';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <div className='image-section-1'>
         <NavBar />
       <Section1 />
