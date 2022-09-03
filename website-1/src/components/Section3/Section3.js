@@ -7,7 +7,7 @@ import AutoFixHighRounded from "@mui/icons-material/AutoFixHighRounded";
 
 function Section3() {
   return (
-    <div>
+    <div className="mobile-view-background">
       <div className="background-section3">
         <div className="background-section3-head">
           <div className="background-section3-header">
@@ -20,7 +20,7 @@ function Section3() {
           </div>
         </div>
         <div className="section3-subsection">
-          <div className="subsection-grid">
+          <div className="subsection-grid" data-aos="fade-up">
             <div className="sub-grid-left">
               {" "}
               <Interests style={{ color: "rgb(227,145,6)" }} />{" "}
@@ -40,7 +40,7 @@ function Section3() {
               </div>
             </div>
           </div>
-          <div className="subsection-grid">
+          <div className="subsection-grid" data-aos="fade-up">
             <div className="sub-grid-left">
               {" "}
               <CardGiftcardRounded style={{ color: "rgb(9,178,158)" }} />{" "}
@@ -59,7 +59,7 @@ function Section3() {
               </div>
             </div>
           </div>
-          <div className="subsection-grid">
+          <div className="subsection-grid" data-aos="fade-up">
             <div className="sub-grid-left">
               {" "}
               <ContentCutRounded style={{ color: "rgb(8,157,224)" }} />{" "}
@@ -78,7 +78,7 @@ function Section3() {
               </div>
             </div>
           </div>
-          <div className="subsection-grid">
+          <div className="subsection-grid" data-aos="fade-up">
             <div className="sub-grid-left">
               {" "}
               <AutoFixHighRounded style={{ color: "rgb(226,59,59)" }} />{" "}

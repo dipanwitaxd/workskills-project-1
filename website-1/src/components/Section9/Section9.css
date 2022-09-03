@@ -10,7 +10,7 @@
   padding-top: 10em;
   padding-bottom: 10em;
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 .background-circle {
   position: absolute;
@@ -302,14 +302,40 @@ img {
   border-radius: 28px;
   height: 100%;
   transition: all 0.3s ease;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
-.botton-annimation :hover  {
-  
-  background-color: rgba(0,0,0,.1);
+.botton-annimation :hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .botton-annimation:active {
   width: 100%;
   transform: scale(0.96);
+}
 
+@media only screen and (max-width: 768px) {
+  .content-head {
+    line-height: 1;
+    position: relative;
+    z-index: 2;
+    color: #ccdae7;
+    font-weight: 700;
+    font-size: 1.875em;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    display: block;
+
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .content-sub-text {
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    font-size: 1.125em;
+    line-height: 1.5;
+    letter-spacing: -.02em;
+    margin-bottom: 1em;
+    color: #ccdae7;
+  }
 }
