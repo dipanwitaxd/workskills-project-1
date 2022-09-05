@@ -12,6 +12,17 @@ import PriceChangeRounded from "@mui/icons-material/PriceChangeRounded";
 import RecordVoiceOverRounded from "@mui/icons-material/RecordVoiceOverRounded";
 import NotListedLocationRounded from "@mui/icons-material/NotListedLocationRounded";
 import DownloadingRounded from "@mui/icons-material/DownloadingRounded";
+import AppsOutageRounded from "@mui/icons-material/AppsOutageRounded";
+import AccountBalanceRounded from "@mui/icons-material/AccountBalanceRounded";
+import ManageAccountsRounded from "@mui/icons-material/ManageAccountsRounded";
+import MovingRounded from "@mui/icons-material/MovingRounded";
+import PendingActionsRounded from "@mui/icons-material/PendingActionsRounded";
+import FeedRounded from "@mui/icons-material/FeedRounded";
+import ContactMailRounded from "@mui/icons-material/ContactMailRounded";
+import LoginRounded from "@mui/icons-material/LoginRounded";
+import AssignmentIndRounded from "@mui/icons-material/AssignmentIndRounded";
+import LogoutRounded from "@mui/icons-material/LogoutRounded";
+import PasswordRounded from "@mui/icons-material/PasswordRounded";
 
 function Options() {
   const [hoverOn1, setHoverOn1] = useState(false);
@@ -25,12 +36,24 @@ function Options() {
   const [hoverOn9, setHoverOn9] = useState(false);
   const [hoverOn10, setHoverOn10] = useState(false);
   const [hoverOn11, setHoverOn11] = useState(false);
+  const [hoverOn12, setHoverOn12] = useState(false);
+  const [hoverOn13, setHoverOn13] = useState(false);
+  const [hoverOn14, setHoverOn14] = useState(false);
+  const [hoverOn15, setHoverOn15] = useState(false);
+  const [hoverOn16, setHoverOn16] = useState(false);
+  const [hoverOn17, setHoverOn17] = useState(false);
+  const [hoverOn18, setHoverOn18] = useState(false);
+  const [hoverOn19, setHoverOn19] = useState(false);
+  const [hoverOn20, setHoverOn20] = useState(false);
+  const [hoverOn21, setHoverOn21] = useState(false);
+  const [hoverOn22, setHoverOn22] = useState(false);
+  const [hoverOn23, setHoverOn23] = useState(false);
   const [product, setProduct] = useState(false);
   const [company, setCompany] = useState(false);
   const [account, setAccount] = useState(false);
   return (
-    <div className="option-background" >
-      <div className="" >
+    <div className="option-background">
+      <div className="">
         <div className="options option">Support</div>
         <div
           onClick={() => setProduct(!product)}
@@ -39,8 +62,8 @@ function Options() {
         >
           Product
         </div>
-        {product && 
-          <div className="product" >
+        {product && (
+          <div className="product">
             <div className="product-content-1">
               <div className="left-grid-option">
                 <div
@@ -257,7 +280,11 @@ function Options() {
                   onClick={() => {
                     setHoverOn9(!hoverOn9);
                   }}
-                  style={hoverOn9 ? { color: "#CCDAE7" } : { color: "#313a41" }}
+                  style={
+                    hoverOn9
+                      ? { color: "#CCDAE7", paddingTop: "2vh" }
+                      : { color: "#313a41", paddingTop: "2vh" }
+                  }
                 >
                   <RecordVoiceOverRounded fontSize="small" />
                   {"  "}{" "}
@@ -316,15 +343,183 @@ function Options() {
                     )}{" "}
                   </div>
                 </div>
-                <div className="border-bottom-option"></div>
               </div>
             </div>
           </div>
-        }
+        )}
 
         <div onClick={() => setCompany(!company)} className="options option">
           Company
         </div>
+        {company && (
+          <div className="company">
+            <div className="right-grid-company">
+              <div className="features-company">COMPANY</div>
+              <div
+                className="text-features-company"
+                onClick={() => {
+                  setHoverOn12(!hoverOn12);
+                }}
+                style={
+                  hoverOn6
+                    ? { color: "#CCDAE7", paddingTop: "1vh" }
+                    : { color: "#313a41", paddingTop: "1vh" }
+                }
+              >
+                <AccountBalanceRounded fontSize="small" />
+                {"  "}{" "}
+                <div className="text-sub-company" style={{ color: "#CCDAE7" }}>
+                  About us #1{" "}
+                  {hoverOn6 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div
+                className="text-features-company"
+                onClick={() => {
+                    setHoverOn13(!hoverOn13);
+                  }}
+                style={hoverOn7 ? { color: "#CCDAE7" } : { color: "#313a41" }}
+              >
+                <ManageAccountsRounded fontSize="small" />
+                {"  "}{" "}
+                <div className="text-sub-company" style={{ color: "#CCDAE7" }}>
+                  About us #2{" "}
+                  {hoverOn7 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div
+                className="text-features-company"
+                onClick={() => {
+                    setHoverOn14(!hoverOn14);
+                  }}
+                style={hoverOn8 ? { color: "#CCDAE7" } : { color: "#313a41" }}
+              >
+                <MovingRounded fontSize="small" />
+                {"  "}
+                <div className="text-sub-company" style={{ color: "#CCDAE7" }}>
+                  About us #3{" "}
+                  {hoverOn8 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div className="border-bottom-company"></div>
+              <div
+                className="text-features-company"
+                onClick={() => {
+                    setHoverOn15(!hoverOn15);
+                  }}
+                style={
+                  hoverOn9
+                    ? { color: "#CCDAE7", paddingTop: "1vh" }
+                    : { color: "#313a41", paddingTop: "1vh" }
+                }
+              >
+                <PendingActionsRounded fontSize="small" />
+                {"  "}{" "}
+                <div className="text-sub-company" style={{ color: "#CCDAE7" }}>
+                  Careers{" "}
+                  {hoverOn9 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div
+                className="text-features-company"
+                onClick={() => {
+                    setHoverOn16(!hoverOn16);
+                  }}
+                style={hoverOn10 ? { color: "#CCDAE7" } : { color: "#313a41" }}
+              >
+                <FeedRounded fontSize="small" />
+                {"  "}{" "}
+                <div className="text-sub-company" style={{ color: "#CCDAE7" }}>
+                  Blog{" "}
+                  {hoverOn10 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div
+                className="text-features-company"
+                onClick={() => {
+                    setHoverOn17(!hoverOn17);
+                  }}
+                style={hoverOn11 ? { color: "#CCDAE7" } : { color: "#313a41" }}
+              >
+                <ContactMailRounded fontSize="small" />
+                {"  "}
+                <div className="text-sub-company" style={{ color: "#CCDAE7" }}>
+                  Contact Us{" "}
+                  {hoverOn11 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div className="border-bottom-company"></div>
+              <div
+                className="text-features-company"
+                onClick={() => {
+                    setHoverOn18(!hoverOn18);
+                  }}
+                style={
+                  hoverOn11
+                    ? {
+                        color: "#CCDAE7",
+                        paddingTop: "1vh",
+                        paddingBottom: "2vh",
+                      }
+                    : {
+                        color: "#313a41",
+                        paddingTop: "1vh",
+                        paddingBottom: "2vh",
+                      }
+                }
+              >
+                <AppsOutageRounded fontSize="small" />
+                {"  "}
+                <div className="text-sub-company" style={{ color: "#CCDAE7" }}>
+                  Privacy Policy{" "}
+                  {hoverOn11 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         <div
           onClick={() => setAccount(!account)}
           className="options option"
@@ -332,6 +527,117 @@ function Options() {
         >
           Account
         </div>
+        {account && (
+          <div className="account">
+            <div className="right-grid-account">
+              <div
+                className="text-features-account"
+                onClick={() => {
+                    setHoverOn19(!hoverOn19);
+                  }}
+                style={hoverOn6 ? { color: "#CCDAE7", paddingBottom: '1vh' } : { color: "#313a41", paddingBottom: '1vh' }}
+              >
+                <LoginRounded fontSize="small" />
+                {"  "}{" "}
+                <div className="text-sub-account" style={{ color: "#CCDAE7" }}>
+                  Sign Up{" "}
+                  {hoverOn6 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div
+                className="text-features-account"
+                onClick={() => {
+                    setHoverOn20(!hoverOn20);
+                  }}
+                style={hoverOn7 ? { color: "#CCDAE7", paddingBottom: '1vh' } : { color: "#313a41", paddingBottom: '1vh' }}
+              >
+                <AssignmentIndRounded fontSize="small" />
+                {"  "}{" "}
+                <div className="text-sub-account" style={{ color: "#CCDAE7" }}>
+                  Sign In{" "}
+                  {hoverOn7 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div
+                className="text-features-account"
+                onClick={() => {
+                    setHoverOn21(!hoverOn21);
+                  }}
+                style={hoverOn8 ? { color: "#CCDAE7", paddingBottom: '1vh' } : { color: "#313a41", paddingBottom: '1vh' }}
+              >
+                <LogoutRounded fontSize="small" />
+                {"  "}
+                <div className="text-sub-account" style={{ color: "#CCDAE7" }}>
+                  Forgot Password{" "}
+                  {hoverOn8 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div className="border-bottom-account"></div>
+              <div
+                className="text-features-account"
+                onClick={() => {
+                    setHoverOn22(!hoverOn22);
+                  }}
+                style={
+                  hoverOn9
+                    ? { color: "#CCDAE7", paddingTop: "2vh" }
+                    : { color: "#313a41", paddingTop: "2vh" }
+                }
+              >
+                <PasswordRounded fontSize="small" />
+                {"  "}{" "}
+                <div className="text-sub-account" style={{ color: "#CCDAE7" }}>
+                  Password Protected{" "}
+                  {hoverOn9 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+              <div
+                className="text-features-account"
+                onClick={() => {
+                    setHoverOn23(!hoverOn23);
+                  }}
+                style={hoverOn10 ? { color: "#CCDAE7", paddingTop: '1vh' } : { color: "#313a41", paddingTop: '1vh' }}
+              >
+                <NotListedLocationRounded fontSize="small" />
+                {"  "}{" "}
+                <div className="text-sub-account" style={{ color: "#CCDAE7" }}>
+                  Not Found{" "}
+                  {hoverOn10 && (
+                    <ArrowForwardRounded
+                      fontSize="0.8em"
+                      style={{ paddingTop: "0.4vh" }}
+                      // data-aos="fade-right"
+                    />
+                  )}{" "}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

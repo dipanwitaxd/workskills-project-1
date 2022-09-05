@@ -25,7 +25,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: green;
     color: aliceblue;
     transform: translateY(10);
     transition: transform 6s ease;
@@ -94,12 +93,16 @@
     padding: 2vh 3vw;
     padding-top: 4vh;
     overflow: hidden;
-    position: static;
+    position: absolute;
     background: transparent;
     top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     transform: translateY(0);
     transition: transform 0.6s ease;
+    z-index: 2;
   }
   .logo-mob{
     text-align: left;
