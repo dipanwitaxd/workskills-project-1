@@ -37,44 +37,70 @@
   }
 }
 .image-section-1 {
-  background-image: linear-gradient(to bottom, rgba(92, 229, 246, 0.32), rgba(92, 229, 246, 0.32)),url("./assets/workskill-proj-1-img-1.jpeg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(92, 229, 246, 0.32),
+      rgba(92, 229, 246, 0.32)
+    ),
+    url("./assets/workskill-proj-1-img-1.jpeg");
   position: relative;
   overflow: hidden;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   opacity: 1;
- 
 }
-@media only screen and (max-width: 768px)  {
-  .app{
+@media only screen and (max-width: 768px) {
+  .app {
     margin: 0;
     width: 100%;
   }
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
   margin: 0;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }

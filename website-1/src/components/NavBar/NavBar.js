@@ -2,11 +2,23 @@ import React from "react";
 import "./NavBar.css";
 import { useState, useEffect } from "react";
 import logo from "../../assets/workskill-proj-1-img-2.svg";
-import DragHandleRounded from '@mui/icons-material/DragHandleRounded';
+import DragHandleRounded from "@mui/icons-material/DragHandleRounded";
+import CloseRounded from "@mui/icons-material/CloseRounded";
+import Product from "./Product";
+import Company from "./Company";
+import Account from "./Account";
+import Options from "./Options";
 
 export default function NavBar() {
   const [header, setHeader] = useState("header");
   const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [showProduct, setShowProduct] = useState(false);
+  const [product, setProduct] = useState(false);
+  const [showCompany, setShowCompany] = useState(false);
+  const [company, setCompany] = useState(false);
+  const [account, setAccount] = useState(false);
+  const [showAccount, setShowAccount] = useState(false);
+  const [showOptions, setShowOptions] = useState(false);
   function getWindowSize() {
     if (typeof window !== "undefined") {
       const { innerWidth, innerHeight } = window;
@@ -41,25 +53,66 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className={header}>
+    <div >
       {!isMobile ? (
-        <div className="navbar-sec">
-          <div className="nav-left">
-            <img src={logo} alt="logo" />
-            <div>Support</div>
-            <div>Product</div>
-            <div>Company</div>
-            <div>Account</div>
+        <div className={header}>
+          <div className="navbar-sec">
+            <div className="nav-left">
+              <img src={logo} alt="logo" />
+              <div>Support</div>
+              <div
+                onClick={() => setProduct(!product)}
+                onMouseOver={(e) => setShowProduct(true)}
+                onMouseOut={() => setShowProduct(false)}
+              >
+                Product
+              </div>
+              <div
+                onClick={() => setCompany(!company)}
+                onMouseOver={(e) => setShowCompany(true)}
+                onMouseOut={() => setShowCompany(false)}
+              >
+                Company
+              </div>
+              <div
+                onClick={() => setAccount(!account)}
+                onMouseOver={(e) => setShowAccount(true)}
+                onMouseOut={() => setShowAccount(false)}
+              >
+                Account
+              </div>
+            </div>
+            <div className="nav-right">
+              <button className="nav-right-button">Buy Template</button>
+            </div>
           </div>
-          <div className="nav-right">
-            <button className="nav-right-button">Buy Template</button>
-          </div>
+          {(showProduct || product) && <Product />}{" "}
+          {(showCompany || company) && <Company />}{" "}
+          {(showAccount || account) && <Account />}
         </div>
       ) : (
-        <div className="mobile-view">
-          <img src={logo} alt='logo' className="logo-mob"></img>
-          <div className="three-bars"> <DragHandleRounded style={{color : '#ccdae7'}} /> </div>
-        </div>
+        <>
+          <div
+            className="mobile-view"
+            style={showOptions ? { backgroundColor: "#1e252c" } : {}}
+          >
+            <img src={logo} alt="logo" className="logo-mob"></img>
+            <div
+              className="three-bars"
+              onClick={() => {
+                setShowOptions(!showOptions);
+              }}
+            >
+              {" "}
+              {!showOptions ? (
+                <DragHandleRounded style={{ color: "#ccdae7" }} />
+              ) : (
+                <CloseRounded style={{ color: "#ccdae7" }} />
+              )}{" "}
+            </div>
+          </div>
+          <div>{showOptions && <Options />} </div>
+        </>
       )}
     </div>
   );
